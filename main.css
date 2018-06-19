@@ -7,12 +7,11 @@ body, h1, body, div, a, ol, ul, li, h2, p, em, img, button {
 	padding: 0;
 	margin: 0;
 	outline: 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {
 	letter-spacing: 1px;
-	font-family: 'Playfair Display', serif;
 }
 
 #navbar1 {
@@ -38,7 +37,6 @@ h1 {
 	padding: 10px 40px;
 	color: #eee;
 	font-size: 23px;
-	font-family: 'Cormorant Unicase', serif;
 	transition-duration: 0.2s;
 }
 
@@ -77,7 +75,7 @@ h1 {
 #indexhead {
 	background: url('images/space.gif');
 	background-size: 120%;
-	padding: 350px 0px;
+	padding: 360px 0px;
 	position: absolute;
 	z-index: 2;
 	width: 100%;
@@ -85,7 +83,7 @@ h1 {
 }
 
 #titlesec {
-	padding: 350px 0px;
+	padding: 360px 0px;
 	z-index: 5;
 	position: relative;
 }
@@ -93,7 +91,6 @@ h1 {
 #titlesec h1 {
 	font-size: 100px;
 	color: #eee;
-	font-family: 'Cormorant Unicase', serif;
 }
 
 .slide1 {
@@ -375,13 +372,11 @@ body:hover .slide4 {
 #eventtitle h1 {
 	color: #eee;
 	font-size: 65px;
-	font-family: 'Cormorant Unicase', serif;
 }
 
 #eventtitle h3 {
 	font-size: 30px;
 	color: #eee;
-	font-family: 'Playfair Display', serif;
 }
 
 #eventbody {
@@ -400,7 +395,6 @@ body:hover .slide4 {
 #abouthead h1 {
 	font-size: 65px;
 	color: #eee;
-	font-family: 'Cormorant Unicase', serif;
 }
 
 #aboutsec1 {
@@ -412,7 +406,6 @@ body:hover .slide4 {
 	padding: 10px 0px;
 	text-align: center;
 	color: #eee;
-	font-family: 'Playfair Display', serif;
 	font-size: 40px;
 }
 
@@ -514,7 +507,6 @@ body:hover .slide4 {
 
 #linkedin {
 	color: #eee;
-	font-family: 'Playfair Display', serif;
 	transition-duration: 0.2s;
 }
 
@@ -558,7 +550,6 @@ body:hover .slide4 {
 
 #teamhead h1 {
 	font-size: 60px;
-	font-family: 'Cormorant Unicase', serif;;
 }
 
 #teamhead h3 {
@@ -638,7 +629,6 @@ body:hover .slide4 {
 
 #workshopshead h1 {
 	font-size: 60px;
-	font-family: 'Cormorant Unicase', serif;
 }
 
 #workshopshead h3 {
