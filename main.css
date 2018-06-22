@@ -63,6 +63,10 @@ h1 {
 	transition-duration: 0.3s;
 }
 
+#navcircle2 {
+	display: none;
+}
+
 #deltalogo img {
 	width: 70px;
 }
@@ -71,6 +75,9 @@ h1 {
 	cursor: pointer;
 }
 
+.drop {
+	display: none;
+}
 
 #indexhead {
 	background: url('images/space.gif');
@@ -733,6 +740,103 @@ body:hover .slide4 {
     }
   }
 
+
+@media only screen and (max-width: 1050px) {
+	#mainnav li {
+		padding: 10px 25px;
+		font-size: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	#mainnav {
+		display: none;
+	}
+
+	#navbar1 ul {
+		height: 65px;
+		width: 100%;
+		margin: 0;
+
+		padding: 25px 0px;
+	}
+
+	#navcircle {
+		display: none;
+	}
+
+	#expand {
+		display: none;
+		padding: 80px 0px 20px 0px;
+		background-color: #232323;
+		margin-top: -25px;
+	}
+
+	.navigate {
+		color: #eee;
+		padding: 13px 0px;
+		font-size: 17px;
+		transition-duration: 0.2s;
+	}
+
+	.navigate:hover {
+		background-color: #555;
+		color: #00b3c6;
+	}
+
+	.drop {
+		display: block;
+	}
+
+	.navcircle2 {
+		display: block;
+		width: 60px;
+		position: absolute;
+		left: 0;
+		top: 3px;
+		transition-duration: 0.3s;
+	}
+
+	.navcircle2 img {
+		width: 100%;
+	}
+
+	.container1 {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		padding: 6px;
+	}
+
+	.container1:hover {
+		cursor: pointer;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 30px;
+		margin: 10px 0px;
+		height: 3px;
+		background-color: #eee;
+		transition-duration: 0.1s;
+	}
+
+	.change .bar1 {
+		 -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+		 transform: rotate(-45deg) translate(-9px, 9px);
+	}
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-9px, -9px);
+		transform: rotate(45deg) translate(-9px, -9px);
+	}
+
+	.middle {
+		left: 50%;
+		margin-left: -30px;
+	}
+}
 
 
 

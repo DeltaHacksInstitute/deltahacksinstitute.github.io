@@ -1,10 +1,9 @@
-
-
-$(document).ready(function() {
-	$("#gautham2").click(function(){
-        $("#gauthambio").classList.toggle("bot");
-    });
-});
+function rotate(x) {
+    x.classList.toggle("change");
+    $(".navcircle2").toggleClass("middle");
+    $("#expand").slideToggle("fast");
+    $("#navbar1 ul").toggleClass("fullheight");
+}
 
 
 $(document).ready(function() {
