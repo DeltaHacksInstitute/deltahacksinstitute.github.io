@@ -109,8 +109,6 @@ h1 {
 	color: white;
 }
 
-
-
 #showmore .fas {
 	color: #eee;
 	font-size: 40px;
@@ -235,6 +233,10 @@ h1 {
 	background-color: #eee;
 	box-shadow: 5px 5px 20px #444;
 	transition-duration: 0.3s;
+}
+
+.event #borderbot {
+	transition-duration: 0.2s;
 }
 
 .event:hover #borderbot {
@@ -443,9 +445,8 @@ h1 {
 }
 
 #mission p {
-	font-size: 24px;
+	font-size: 22px;
 	color: #eee;
-	text-align: center;
 }
 
 #founders {
@@ -462,7 +463,6 @@ h1 {
 #founders p {
 	font-size: 22px;
 	color: #eee;
-	text-align: center;
 }
 
 #founders .col-sm-6 {
@@ -530,6 +530,7 @@ h1 {
 	padding: 150px 10% 50px 10%;
 	background: linear-gradient(70deg, #30579f 50%, #00b3c6 50%);
 	color: white;
+	background-attachment: fixed;
 }
 
 #teamhead h1 {
@@ -609,6 +610,7 @@ h1 {
 	padding: 140px 10% 45px 10%;
 	background: linear-gradient(70deg, #30579f 50%, #333 50%);
 	color: #eee;
+	background-attachment: fixed;
 }
 
 #workshopshead h1 {
@@ -718,10 +720,322 @@ h1 {
   }
 
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
 	#mainnav li {
 		padding: 10px 25px;
 		font-size: 20px;
+	}
+
+	#indexhead {
+		padding: 300px 0px;
+	}
+
+	#titlesec {
+		padding: 200px 5%;
+	}
+
+	#titlesec h1 {
+		font-size: 60px;
+	}
+
+	#titlesec h3 {
+		font-size: 35px;
+	}
+
+	#showmore .fas {
+		font-size: 30px;
+		bottom: -15px;
+		margin-left: -50px;
+		padding: 22px 30px;
+	}
+
+	#showmore .fas:hover {
+		bottom: -20px;
+	}
+
+	#intro {
+		padding: 60px 7% 0px 7%;
+	}
+
+	#intro h1 {
+		color: #eee;
+		font-size: 40px;
+	}
+
+	#intro ul {
+		padding-bottom: 30px;
+	}
+
+	#intro a, #fullteam {
+		font-size: 20px;
+		padding: 15px 35px;
+		color: #eee;
+		border: 2px solid #eee;
+		transition-duration: 0.2s;
+	}
+
+	#fullteam {
+		width: 40%;
+	}
+
+	#intro li {
+		font-size: 19px;
+	}
+
+	#computer {
+		width: 80%;
+		margin-left: 10%;
+		padding-top: 60px;
+	}
+
+	.row2 {
+		position: relative;
+	}
+
+	#showmore2 .fas {
+		font-size: 30px;
+		bottom: -15px;
+		margin-left: -50px;
+		padding: 22px 30px;
+	}
+
+	#showmore2 .fas:hover {
+		bottom: -20px;
+	}
+
+	#upcoming {
+		padding: 60px 5%;
+	}
+
+	#upcoming h1 {
+		color: #232323;
+		font-size: 40px;
+	}
+
+	.event {
+		margin: 20px 0;
+		padding: 20px 6% 50px 6%;
+	}
+
+	.eventdate {
+		font-size: 22px;
+	}
+
+	.eventtitle {
+		font-size: 30px;
+	}
+
+	.event #borderbot {
+		background-color: #333;
+		width: 30%;
+	}
+
+	.eventbody img {
+		width: 100%;
+	}
+
+	.eventbody p {
+		font-size: 18px;
+	}
+
+	.signup {
+		font-size: 20px;
+	}
+
+	#contact {
+		padding: 50px 8% 20px 8%;
+	}
+
+	#contact h1 {
+		font-size: 40px;
+	}
+
+	#contact p {
+		font-size: 18px;
+	}
+
+	#contact .fab {
+		font-size: 40px;
+		margin: 30px 20px;
+	}
+
+	#footer p {
+		font-size: 18px;
+	}
+
+	/*events*/
+	#eventshead {
+		padding: 140px 10%;
+	}
+
+	#eventmask {
+		height: 280px;
+	}
+
+	#eventtitle {
+		top: 120px;
+	}
+
+	#eventtitle h1 {
+		font-size: 50px;
+	}
+
+	#eventtitle h3 {
+		font-size: 28px;
+	}
+
+	#eventbody {
+		padding: 30px 5%;
+	}
+
+	/*About*/
+	#abouthead {
+		padding: 160px 10% 60px 10%;
+		background-size: 140%;
+	}
+
+	#abouthead h1 {
+		font-size: 50px;
+	}
+
+	#aboutsec1 {
+		padding: 50px 5%;
+	}
+
+	#aboutsec1 h2, #mission h2 {
+		font-size: 35px;
+	}
+
+	#aboutsec1 #borderbot, #mission #borderbot {
+		width: 10%;
+	}
+
+	#aboutsec1 p {
+		font-size: 20px;
+	}
+
+	#aboutsec1 p a {
+		color: #00b3c6;
+	}
+
+	#aboutsec1 li {
+		font-size: 19px;
+	}
+
+	#mission {
+		padding: 50px 7% 70px 7%;
+		background-attachment: fixed;
+	}
+
+	#mission h2, #founders h1 {
+		font-size: 35px;
+	}
+
+	#mission p {
+		font-size: 19px;
+	}
+
+	#founders {
+		padding: 60px 7%;
+	}
+
+	#founders p {
+		font-size: 19px;
+	}
+
+	#founders .col-sm-6 {
+		padding: 30px 5%;
+	}
+
+	#founders .col-sm-6 h2 {
+		font-size: 32px;
+	}
+
+	#founders li {
+		font-size: 19px;
+	}
+
+	#founders #borderbot {
+		width: 10%;
+	}
+
+	/*Team*/
+	#teamhead {
+		padding: 130px 10% 40px 10%;
+	}
+
+	#teamhead h1 {
+		font-size: 50px;
+	}
+
+	#teamhead h3 {
+		font-size: 28px;
+	}
+
+	#teambody {
+		padding: 50px 5%;
+	}
+
+	#teambody .col-sm-4 {
+		padding: 0px 5px;
+	}
+
+	.officer {
+		margin: 20px 0%;
+	}
+
+	.officer .name {
+		padding: 30px 5% 0px 5%;
+		font-size: 25px;
+	}
+
+	.officer .position {
+		padding: 0px 5%;
+		font-size: 20px;
+	}
+
+	.bio h2 {
+		font-size: 22px;
+	}
+
+	.bio p {
+		font-size: 18px;
+	}
+
+	/* Workshops*/
+	#workshopshead {
+		padding: 130px 7% 40px 7%;
+	}
+
+	#workshopshead h1 {
+		font-size: 50px;
+	}
+
+	#workshopshead h3 {
+		font-size: 28px;
+	}
+
+	#workshopsbody {
+		padding: 40px 7%;
+	}
+
+	.workshop h1 {
+		font-size: 30px;
+	}
+
+	.wsdescription {
+		font-size: 19px;
+	}
+
+	.workshop li {
+		font-size: 19px;
+		margin-left: 6%; 
+	}
+
+	.workshop #borderbot {
+		margin: 0px 0px 20px 0px;
+		background-color: #444;
+		width: 20%;
 	}
 
 }
@@ -745,7 +1059,7 @@ h1 {
 
 	#expand {
 		display: none;
-		padding: 80px 0px 20px 0px;
+		padding: 60px 0px 20px 0px;
 		background-color: #232323;
 		margin-top: -25px;
 	}
@@ -811,8 +1125,292 @@ h1 {
 
 	.middle {
 		left: 50%;
-		margin-left: -30px;
+		margin-left: -20px;
 	}
+
+	#indexhead {
+		padding: 200px 0px;
+		background-size: 180%;
+	}
+
+	#titlesec {
+		padding: 100px 5% 70px 5%;
+	}
+
+	#titlesec h1 {
+		font-size: 40px;
+	}
+
+	#titlesec h3 {
+		font-size: 26px;
+	}
+
+	#showmore .fas {
+		font-size: 20px;
+		bottom: -10px;
+		margin-left: -50px;
+		padding: 15px 24px;
+	}
+
+	#showmore .fas:hover {
+		bottom: -15px;
+	}
+
+	#intro {
+		padding: 50px 10% 0px 10%;
+	}
+
+	#intro h1 {
+		font-size: 30px;
+	}
+
+	#intro ul {
+		padding-bottom: 20px;
+	}
+
+	#intro a, #fullteam {
+		font-size: 18px;
+		padding: 10px 27px;
+	}
+
+	#fullteam {
+		width: 80%;
+	}
+
+	#intro li {
+		font-size: 17px;
+	}
+
+	#showmore2 .fas {
+		font-size: 20px;
+		bottom: -10px;
+		margin-left: -50px;
+		padding: 15px 24px;
+	}
+
+	#showmore2 .fas:hover {
+		bottom: -15px;
+	}
+
+	#upcoming {
+		padding: 50px 10%;
+	}
+
+	#upcoming h1 {
+		font-size: 30px;
+	}
+
+	.event {
+		padding: 20px 8% 40px 8%;
+	}
+
+	.eventdate {
+		font-size: 20px;
+	}
+
+	.eventtitle {
+		font-size: 25px;
+	}
+
+	.event #borderbot {
+		width: 40%;
+	}
+
+	.eventbody p {
+		font-size: 17px;
+	}
+
+	.signup {
+		font-size: 18px;
+	}
+
+	#contact {
+		padding: 40px 10% 20px 10%;
+	}
+
+	#contact h1 {
+		font-size: 30px;
+	}
+
+	#contact p {
+		font-size: 18px;
+	}
+
+	#contact .fab {
+		font-size: 25px;
+		margin: 20px 10px;
+	}
+
+	/*events*/
+	#eventshead {
+		padding: 120px 10%;
+		background-size: 200%;
+	}
+
+	#eventmask {
+		height: 240px;
+	}
+
+	#eventtitle {
+		top: 100px;
+	}
+
+	#eventtitle h1 {
+		font-size: 40px;
+	}
+
+	#eventtitle h3 {
+		font-size: 23px;
+		margin: 5px 0px;
+	}
+
+	#eventbody {
+		padding: 30px 5%;
+	}
+
+	/*About*/
+	#abouthead {
+		padding: 100px 10% 40px 10%;
+		background-size: 140%;
+	}
+
+	#abouthead h1 {
+		font-size: 40px;
+	}
+
+	#aboutsec1 {
+		padding: 40px 9%;
+	}
+
+	#aboutsec1 h2, #mission h2 {
+		font-size: 30px;
+	}
+
+	#aboutsec1 #borderbot, #mission #borderbot {
+		width: 20%;
+	}
+
+	#aboutsec1 p {
+		font-size: 17px;
+	}
+
+	#aboutsec1 li {
+		font-size: 17px;
+		margin-left: 6%;
+	}
+
+	#aboutcarousel {
+		padding-top: 30px;
+	}
+
+	#mission {
+		padding: 40px 9% 60px 9%;
+		background-attachment: fixed;
+	}
+
+	#mission h2, #founders h1 {
+		font-size: 30px;
+	}
+
+	#mission p {
+		font-size: 17px;
+	}
+
+	#founders {
+		padding: 50px 9%;
+	}
+
+	#founders p {
+		font-size: 17px;
+	}
+
+	#founders .col-sm-6 {
+		padding: 20px 5%;
+	}
+
+	#founders .col-sm-6 h2 {
+		font-size: 28px;
+	}
+
+	#founders li {
+		font-size: 17px;
+	}
+
+	#founders #borderbot {
+		width: 25%;
+	}
+
+	/*Team*/
+	#teamhead {
+		padding: 100px 10% 30px 10%;
+	}
+
+	#teamhead h1 {
+		font-size: 40px;
+	}
+
+	#teamhead h3 {
+		font-size: 23px;
+	}
+
+	#teambody {
+		padding: 10px 7% 30px 7%;
+	}
+
+	.officer .name {
+		font-size: 22px;
+	}
+
+	.officer .position {
+		font-size: 19px;
+	}
+
+	.bio h2 {
+		font-size: 20px;
+	}
+
+	.bio p {
+		font-size: 17px;
+	}
+
+	/* Workshops*/
+	#workshopshead {
+		padding: 100px 7% 30px 7%;
+	}
+
+	#workshopshead h1 {
+		font-size: 40px;
+	}
+
+	#workshopshead h3 {
+		font-size: 24px;
+	}
+
+	#workshopsbody {
+		padding: 10px 7% 30px 7%;
+	}
+
+	.workshop {
+		padding: 20px 0px 30px 0px;
+	}
+
+	.workshop h1 {
+		font-size: 26px;
+	}
+
+	.wsdescription {
+		font-size: 17px;
+	}
+
+	.workshop li {
+		font-size: 17px;
+		margin-left: 10%; 
+	}
+
+	.workshop img {
+		padding-top: 20px;
+	}
+
 }
 
 
