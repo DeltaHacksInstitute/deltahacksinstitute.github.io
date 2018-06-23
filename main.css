@@ -97,9 +97,9 @@ h1 {
 }
 
 #titlesec h1 {
-	font-size: 100px;
+	font-size: 80px;
 	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Work Sans';
 }
 
 #titlesec h3 {
@@ -155,9 +155,6 @@ h1 {
 	transition-duration: 0.2s;
 }
 
-#intro a {
-	margin-left: 3%;
-}
 
 #intro a:hover {
 	background-color: #00b3c6;
