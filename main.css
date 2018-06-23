@@ -80,8 +80,8 @@ h1 {
 }
 
 #indexhead {
-	background: url('images/space.gif');
-	background-size: 120%;
+	background: url('images/titleimg.jpg');
+	background-size: 100%;
 	padding: 360px 0px;
 	position: absolute;
 	z-index: 2;
@@ -90,50 +90,23 @@ h1 {
 }
 
 #titlesec {
-	padding: 360px 0px;
+	padding: 250px 0px;
 	z-index: 5;
 	position: relative;
+	text-align: center;
 }
 
 #titlesec h1 {
 	font-size: 100px;
-	color: #eee;
+	color: white;
+	font-family: 'Roboto', sans-serif;
 }
 
-.slide1 {
-	position: absolute;
-	left: 10%;
-	transition-duration: 0.3s;
+#titlesec h3 {
+	font-size: 50px;
+	color: white;
 }
 
-.slide4 {
-	position: absolute;
-	left: -50%;
-	transition-duration: 0.3s;
-}
-
-#teaching, #delta {
-	top: 200px;
-	transition-delay: 2s;
-}
-
-#inspiring, #hacks {
-	top: 320px;
-	transition-delay: 2.5s;
-}
-
-#hacking, #institute { 
-	top: 440px;
-	transition-delay: 3s;
-}
-
-body:hover .slide1 {
-	left: 120%;
-}
-
-body:hover .slide4 {
-	left: 10%;
-}
 
 
 #showmore .fas {
