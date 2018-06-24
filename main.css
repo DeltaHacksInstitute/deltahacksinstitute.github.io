@@ -370,7 +370,7 @@ h1 {
 }
 
 #eventbody {
-	padding: 70px 5% 80px 5%;
+	padding: 70px 5% 100px 5%;
 	background-color: #eee;
 	position: relative;
 	top: 320px;
@@ -891,7 +891,7 @@ h1 {
 	}
 
 	#eventbody {
-		padding: 30px 5%;
+		padding: 30px 5% 60px 5%;
 		top: 280px;
 	}
 
@@ -1272,7 +1272,6 @@ h1 {
 	}
 
 	#eventbody {
-		padding: 30px 5%;
 		top: 240px;
 	}
 
