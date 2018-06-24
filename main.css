@@ -472,21 +472,19 @@ h1 {
 }
 
 #founders .col-sm-6 {
-	padding: 40px 10%;
+	padding: 40px 5%;
 	text-align: center;
 }
 
-#founders .col-sm-6 img {
+#founders img {
 	width: 88%;
 	margin: 20px auto;
-	border: 5px solid #333;
-	border-radius: 100%;
+	border: 5px solid transparent;
 	transition-duration: 0.2s;
 }
 
-#founders .col-sm-6 img:hover {
+#founders img:hover {
 	border: 5px solid #00b3c6;
-	opacity: 0.95;
 	cursor: pointer;
 	transform: scale(1.03);
 }
@@ -496,7 +494,7 @@ h1 {
 }
 
 #linkedin {
-	color: #eee;
+	color: #232323;
 	transition-duration: 0.2s;
 }
 
@@ -509,8 +507,14 @@ h1 {
 	display: none;
 }
 
+.founderbox {
+	background-color: #eee;
+	padding: 60px 30px 30px 30px;
+	margin-top: -60px;
+}
+
 #founders ul {
-	color: #eee;
+	color: #232323;
 	padding: 10px 0px;
 	text-align: left;
 }
@@ -518,6 +522,7 @@ h1 {
 #founders li {
 	font-size: 20px;
 	padding: 10px 0px;
+	margin-left: 10%;
 	list-style-type: square;
 }
 
@@ -529,26 +534,35 @@ h1 {
 
 #founders .col-sm-6 #borderbot {
 	width: 25%;
+	background-color: #232323;
 }
 
 /*Team*/
 #teamhead {
-	padding: 150px 10% 50px 10%;
-	background: linear-gradient(70deg, #30579f 50%, #00b3c6 50%);
-	color: white;
+	padding: 150px 10% 0px 6%;
+	background-color: #eee;
+	color: #232323;
+	margin: 0;
 	background-attachment: fixed;
 }
 
 #teamhead h1 {
 	font-size: 60px;
+	margin: 0;
+}
+
+#teamhead i {
+	color: #00b3c6;
 }
 
 #teamhead h3 {
 	font-size: 35px;
+	margin: 10px 0px 0px 0px;
 }
 
 #teambody {
 	padding: 60px 6%;
+	margin: 0;
 	background-color: #eee;
 }
 
