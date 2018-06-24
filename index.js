@@ -71,10 +71,14 @@ $(window).scroll(function() {
     var winTop = $(window).scrollTop();
 
     $("#indexhead").css({
-    'margin-top' : winTop/2
+    'margin-top' : winTop/3
     });
     $("#abouthead").css({
     'background-size' : (140 + winTop/3) + "%"
+    });
+
+    $("#eventshead").css({
+    'top' : winTop/3
     });
 
     $("#mission").css({

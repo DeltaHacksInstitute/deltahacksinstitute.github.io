@@ -334,6 +334,10 @@ h1 {
 	padding: 160px 10%;
 	background: url('images/eventhead.jpg');
 	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 #eventmask {
@@ -368,6 +372,8 @@ h1 {
 #eventbody {
 	padding: 70px 5% 80px 5%;
 	background-color: #eee;
+	position: relative;
+	top: 320px;
 }
 
 /*About*/
@@ -886,6 +892,7 @@ h1 {
 
 	#eventbody {
 		padding: 30px 5%;
+		top: 280px;
 	}
 
 	/*About*/
@@ -1266,6 +1273,7 @@ h1 {
 
 	#eventbody {
 		padding: 30px 5%;
+		top: 240px;
 	}
 
 	/*About*/
