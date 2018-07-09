@@ -194,35 +194,45 @@ h1 {
 	color: #333;
 	font-size: 40px;
 	position: absolute;
-	bottom: -20px;
+	bottom: -0px;
 	margin-left: -90px;
 	left: 50%;
 	z-index: 2;
 	padding: 30px 40px;
-	background-color: #eee;
+	background: linear-gradient(135deg, #222, #00b3c6, #30579f);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	transition-duration: 0.6s;
 	border-radius: 50% 50% 0px 0px;
 	transition-duration: 0.2s;
 }
 
 #showmore2 .fas:hover {
-	bottom: -30px;
+	bottom: -10px;
 	cursor: pointer;
-	color: #00b3c6;
+	color: white;
 }
 
 #upcoming {
-	background-color: #eee;
+	background: linear-gradient(135deg, #222, #00b3c6, #30579f);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	transition-duration: 0.6s;
 	padding: 70px 7%;
 }
 
 #upcoming h1 {
-	color: #232323;
+	color: white;
 	font-size: 50px;
 	padding: 10px 0px;
 }
 
 #upcoming #borderbot {
-	background-color: #333;
+	background-color: white;
 	transition-duration: 0.2s;
 }
 
@@ -284,6 +294,79 @@ h1 {
 	border: 2px solid #00b3c6;
 }
 
+#faq {
+	padding: 60px 8px 40px 8%;
+	background-color: #eee;
+	color: #232323;
+}
+
+#faq h1 {
+	color: #232323;
+	font-size: 50px;
+	padding: 10px 0px;
+}
+
+.faqsec {
+	padding: 20px 0px;
+}
+
+.question {
+	font-size: 28px;
+	padding: 10px 0px;
+	color: #232323;
+	transition-duration: 0.2s;
+}
+
+.answer {
+	font-size: 25px;
+	color: #777;
+	padding-left: 45px;
+	display: none;
+}
+
+.question:hover {
+	color: #00b3c6;
+	cursor: pointer;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
 #contact {
 	padding: 60px 8% 30px 8%;
 	background-color: #333;
@@ -344,7 +427,12 @@ h1 {
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	background-color: #30579f;
+	background: linear-gradient(135deg, #222, #00b3c6, #30579f);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	transition-duration: 0.6s;
 	opacity: 0.6;
 	top: 0;
 	height: 320px;
@@ -828,7 +916,6 @@ h1 {
 	}
 
 	#upcoming h1 {
-		color: #232323;
 		font-size: 40px;
 	}
 
@@ -860,6 +947,29 @@ h1 {
 
 	.signup {
 		font-size: 20px;
+	}
+
+	#faq {
+		padding: 40px 6% 30px 6%;
+		background-color: #eee;
+		color: #232323;
+	}
+
+	#faq h1 {
+		font-size: 40px;
+	}
+
+	.faqsec {
+		padding: 15px 0px;
+	}
+
+	.question {
+		font-size: 22px;
+	}
+
+	.answer {
+		font-size: 20px;
+		padding-left: 25px;
 	}
 
 	#contact {
@@ -1243,6 +1353,23 @@ h1 {
 
 	.signup {
 		font-size: 18px;
+	}
+
+	#faq h1 {
+		font-size: 30px;
+	}
+
+	.faqsec {
+		padding: 15px 0px;
+	}
+
+	.question {
+		font-size: 20px;
+	}
+
+	.answer {
+		font-size: 18px;
+		padding-left: 20px;
 	}
 
 	#contact {

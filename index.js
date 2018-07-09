@@ -24,6 +24,30 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function(){
+          $("#question1").click(function(){
+              $("#answer1").slideToggle("fast");
+          });
+      });
+
+$(document).ready(function(){
+          $("#question2").click(function(){
+              $("#answer2").slideToggle("fast");
+          });
+      });
+
+$(document).ready(function(){
+          $("#question3").click(function(){
+              $("#answer3").slideToggle("fast");
+          });
+      });
+
+$(document).ready(function(){
+          $("#question4").click(function(){
+              $("#answer4").slideToggle("fast");
+          });
+      });
+
 $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
