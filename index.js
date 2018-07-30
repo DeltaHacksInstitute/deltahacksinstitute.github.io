@@ -48,6 +48,23 @@ $(document).ready(function(){
           });
       });
 
+$(document).ready(function(){
+          $("#question5").click(function(){
+              $("#answer5").slideToggle("fast");
+          });
+      });
+$(document).ready(function(){
+          $("#question6").click(function(){
+              $("#answer6").slideToggle("fast");
+          });
+      });
+
+$(document).ready(function(){
+          $("#question7").click(function(){
+              $("#answer7").slideToggle("fast");
+          });
+      });
+
 $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
@@ -124,6 +141,5 @@ function cancel() {
   $("#bio").fadeOut();
   $("#cover").fadeOut();
 }
-
 
 
