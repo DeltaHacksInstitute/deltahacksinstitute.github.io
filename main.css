@@ -1149,11 +1149,16 @@ h1 {
 		font-size: 20px;
 	}
 
-	.bio h2 {
+	#bio {
+		top: 10%;
+		width: 70%;
+	}
+
+	#bio h2 {
 		font-size: 22px;
 	}
 
-	.bio p {
+	#bio p {
 		font-size: 18px;
 	}
 
@@ -1537,11 +1542,16 @@ h1 {
 		font-size: 19px;
 	}
 
-	.bio h2 {
+	#bio {
+		width: 94%;
+		position: absolute;
+	}
+
+	#bio h2 {
 		font-size: 20px;
 	}
 
-	.bio p {
+	#bio p {
 		font-size: 17px;
 	}
 
