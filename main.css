@@ -662,7 +662,6 @@ h1 {
 	text-align: center;
 	border: 3px solid #eee;
 	transition-duration: 0.3s;
-	position: relative;
 	overflow: hidden;
 	z-index: 4;
 }
@@ -672,8 +671,13 @@ h1 {
 	cursor: pointer
 }
 
+.officer:hover img {
+	opacity: 0.8;
+}
+
 .officer img {
 	width: 100%;
+	transition-duration: 0.2s;
 }
 
 .officer .name {
@@ -686,31 +690,51 @@ h1 {
 	font-size: 25px;
 }
 
-.bio {
-	padding: 30px 10%;
+#bio {
+	padding: 30px 3%;
 	text-align: left;
-	position: absolute;
-	bottom: -99%;
+	position: fixed;
+	margin: 0px auto;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	right: 0;
+	top: 20%;
+	z-index: 95;
+	width: 50%;
 	background-color: #30579f;
-	transition-duration: 0.4s;
-	transition-delay: 0.2s;
 	z-index: 6;
+	display: none;
+	color: white;
 }
 
-.bio h2 {
-	font-size: 25px;
+#bio p {
+	font-size: 20px;
+	padding: 20px 0px;
 }
 
-.bio p {
-	font-size: 18px;
-	padding: 15px 0px;
+#cover {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: #444;
+	z-index: 5;
+	opacity: 0.5;
+	display: none;
 }
 
-.officer:hover .bio {
-	bottom: 0;
+#cancel {
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	z-index: 90;
+}
+
+#cancel:hover {
+	color: #ddd;
+	cursor: pointer;
 }
 
 /* Workshops*/

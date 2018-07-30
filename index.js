@@ -110,5 +110,20 @@ $(window).scroll(function() {
     });
 });
 
+var gautham = "<h1>Gautham Raghupathi</h1> <h3>Founder, President</h3> <p>Tom is a junior at Monta Vista High School. He has tons of experience competing at hackathons, winning awards at six of them. Tom is in the Gold division of the USA Computing Olympiad, and has experience creating production-level Android apps and machine learning algorithms. When he isn't coding, Tom participates in Monta Vista Speech and Debate and volunteers with Leo Club. He also helps with research at Berkeley as a Machine Learning intern.</p>";
+var tom = "<h1>Tom Zhang</h1> <h3>Founder, President</h3> <p>Gautham is a junior at Monta Vista High School. He began to compete in hackathons right when he was eligible to do so, in the summer after 8th grade. He initially attended hackathons for the swag; however, hackathons molded him into an all-round coder, even resulting in him winning awards at six hackathons. Gautham is also an active member of various organizations such as Technology Student Association, FRC Team #299: Valkyrie Robotics, and Silicon Valley Forensics. Aside from this, he enjoys playing tennis, playing the flute, and watching the latest Marvel movies.</p>";
+var sam = "<h1>Sam Yang</h1> <h3>Vice President of Technology</h3> <p>Sam is an avid web designer and programmer, with experience in HTML, CSS, Javascript, Bootstrap, jQuery, Firebase, React, Node and PHP.  His work includes Silicon Valley Forensics, Silicon Valley Youth, Senior Tech Assistance Initiative, EngAcademy, Students and Seniors United and more.  He is also a current co-president of Silcion Valley Youth.  Outside of his work, he enjoys playing the guitar, singing and playing baseball.</p>";
+
+function bio(name) {
+  $("#bio").fadeIn();
+  $("#cover").fadeIn();
+  $("#bio #text").html(name);
+}
+
+function cancel() {
+  $("#bio").fadeOut();
+  $("#cover").fadeOut();
+}
+
 
 
