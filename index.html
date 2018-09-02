@@ -14,45 +14,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
-<style>
-	#navbar1 {
-		background-color: transparent;
-	}
-
-	#navcircle {
-		background-color: transparent;
-	}
-</style>
 <body>
-	<nav id="navbar1">
-			<div id="navcircle">
-	    		<a href="index.html" id="deltalogo"><img src="images/logo.jpg"></a>
-	    	</div>
-	  <ul>
-	    <div id="mainnav">
-	  	  <a href="team.html"><li class="navig">team</li></a>
-	      <a href="about.html"><li class="navig">about</li></a>
-	      <a><li id="placeholder"></li></a>
-	      <a href="events.html"><li class="navig">events</li></a>
-	      <a href="workshops.html"><li class="navig">workshops</li></a>
-	    </div>
-	    <div class="drop">
-	    	<div class="navcircle2">
-	    		<a href="index.html"><img src="images/logo.jpg"></a>
-	    	</div>
-	        <div class="container1" onclick="rotate(this)" id="open">
-	              <div class="bar1"></div>
-	              <div class="bar2"></div>
-	              <div class="bar3"></div>
-	        </div>
-	        <div id="expand">
-	          <a href="team.html"><li class="navigate">team</li></a>
-	          <a href="about.html"><li class="navigate">about</li></a>
-	          <a href="events.html"><li class="navigate">events</li></a>
-	          <a href="workshops.html"><li class="navigate">workshops</li></a>
-	        </div>
-	     </div>
-	  </ul>
+	<nav id="navbar">
+		<a href="index.html" class="deltalogo"><img src="images/logo.jpg"></a>
+		<button id="dots"><img src="images/dots.png"></button>
+		  <ul>
+		    <div id="mainnav">
+		  	  <a href="team.html"><li class="navig">team</li></a>
+		      <a href="about.html"><li class="navig">about</li></a>
+		      <a href="events.html"><li class="navig">events</li></a>
+		      <a href="workshops.html"><li class="navig">workshops</li></a>
+		    </div>
+		  </ul>
 	</nav>
 	<div id="titlesec">
 			<h1>DELTA HACKS INSTITUTE.</h1>
@@ -65,6 +38,7 @@
 	</div>
 	<div id="intro">
 		<div class="row row2">
+			<div id="greybackground"></div>
 			<div class="col-md-7">
 				<h1 class="slideanim">What We Do</h1>
 				<div id="borderbot" class="slideanim"></div>
@@ -81,104 +55,94 @@
 		</div>
 	</div>
 	<div id="upcoming">
-		<h1 class="slideanim">Upcoming Events</h1>
-		<div id="borderbot" class="slideanim2" style="background-color: white"></div>
+		<h1 class="slideanim">Upcoming Events</h1> <a id="seeall" href="events.html">See All Events</a>
+		<div id="borderbot" class="slideanim"></div>
+		<div id="dottedline" class="slideanim2"></div>
 		<div class="row">
-			<div class="col-sm-6">
-				<div class="event slideanim2">
-					<h3 class="eventdate">September X, 2018</h3>
-					<h2 class="eventtitle">X Workshop @ X Hackathon</h2>
+			<div class="event" id="eventA" onclick="eventA()">
+					<img src="images/hack1.jpg">
 					<div class="eventbody">
-						<img src="images/hack1.jpg">
-						<p>Description</p>
+						<h3 class="eventdate">September 8-9, 2018</h3>
+						<h2 class="eventtitle">SRC Code @ 42 Silicon Valley</h2>
+						<p>Workshops: TBD</p>
 						<a href="forms.google.com" class="signup">Sign Up</a>
 					</div>
-				</div>
 			</div>
-			<div class="col-sm-6">
-				<div class="event slideanim2">
-					<h3 class="eventdate">September Y, 2018</h3>
-					<h2 class="eventtitle">Y Workshop @ Y Hackathon</h2>
+			<div class="event" id="eventB" onclick="eventB()">
+					<img src="images/hack2.jpg">
 					<div class="eventbody">
-						<img src="images/hack2.jpg">
-						<p>Description</p>
+						<h3 class="eventdate">October 20-21, 2018</h3>
+						<h2 class="eventtitle">Hyphen-Hacks @ Lick-Wilmerding High School</h2>
+						<p>Workshops: TBD</p>
 						<a href="forms.google.com" class="signup">Sign Up</a>
 					</div>
-				</div>
 			</div>
 		</div>
 	</div>
 	<div id="faq">
 		<h1 class="slideanim">Frequently Asked Questions</h1>
 		<div id="borderbot" class="slideanim2" style="background-color: #232323; margin-left: 0"></div>
-		<div class="faqsec">
-			<div class="question slideanim" id="question1">
-				<p><i class="fas fa-arrow-right"></i>  Are the workshops free?</p>
+		<div id="faqsection">
+			<div class="faqsec">
+				<div class="question slideanim" id="question1">
+					<p><i class="fas fa-arrow-right"></i>  Are the workshops free?</p>
+				</div>
+				<div class="answer" id="answer1">
+					<p>Yes! DeltaHacks Institute offers our workshops at absolutely no cost to attendees.</p>
+				</div>
 			</div>
-			<div class="answer" id="answer1">
-				<p>Yes! DeltaHacks Institute offers our workshops at absolutely no cost to attendees.</p>
+	    	<div class="faqsec">
+				<div class="question slideanim" id="question2">
+					<p><i class="fas fa-arrow-right"></i>  Do you guys host hackathons?</p>
+				</div>
+				<div class="answer" id="answer2">
+					<p>As of now, we are not hosting our own hackathons. Instead, we work with hackathon organizers to make their events more fun and educational. </p>
+				</div>
 			</div>
-		</div>
-    <div class="faqsec">
-			<div class="question slideanim" id="question2">
-				<p><i class="fas fa-arrow-right"></i>  Do you guys host hackathons?</p>
+			<div class="faqsec">
+				<div class="question slideanim" id="question3">
+					<p><i class="fas fa-arrow-right"></i>  How do I sign up for a workshop?</p>
+				</div>
+				<div class="answer" id="answer3">
+					<p>Check out our "Upcoming Events" section above or our <a href="events.html">events page</a> to see which hackathons we're hosting workshops at. Sign up for a hackathon you're interested in, and remember to attend our workshop during the event!</p>
+				</div>
 			</div>
-			<div class="answer" id="answer2">
-				<p>As of now, we are not hosting our own hackathons. Instead, we work with hackathon organizers to make their events more fun and educational. </p>
+			<div class="faqsec">
+				<div class="question slideanim" id="question4">
+					<p><i class="fas fa-arrow-right"></i>  Can you host a workshop at our hackathon?</p>
+				</div>
+				<div class="answer" id="answer4">
+					<p>Absolutely! Email us at <a href="mailto:deltahacksinstitute@gmail.com">deltahacksinstitute@gmail.com</a> and we'll get back to you as soon as possible. We look forward to working with you!</p>
+				</div>
 			</div>
-		</div>
-		<div class="faqsec">
-			<div class="question slideanim" id="question3">
-				<p><i class="fas fa-arrow-right"></i>  How do I sign up for a workshop?</p>
-			</div>
-			<div class="answer" id="answer3">
-				<p>Check out our "Upcoming Events" section above or our <a href="events.html">events page</a> to see which hackathons we're hosting workshops at. Sign up for a hackathon you're interested in, and remember to attend our workshop during the event!</p>
-			</div>
-		</div>
-		<div class="faqsec">
-			<div class="question slideanim" id="question4">
-				<p><i class="fas fa-arrow-right"></i>  Can you host a workshop at our hackathon?</p>
-			</div>
-			<div class="answer" id="answer4">
-				<p>Absolutely! Email us at <a href="mailto:deltahacksinstitute@gmail.com">deltahacksinstitute@gmail.com</a> and we'll get back to you as soon as possible. We look forward to working with you!</p>
-			</div>
-		</div>
-		<div class="faqsec">
-			<div class="question slideanim" id="question5">
-				<p><i class="fas fa-arrow-right"></i>  How can I get involved with DeltaHacks?</p>
-			</div>
-			<div class="answer" id="answer5">
-				<p><a href="mailto:deltahacksinstitute@gmail.com">Email us!</a> We're always looking for passionate people who can help with our mission.</p>
+			<div class="faqsec">
+				<div class="question slideanim" id="question5">
+					<p><i class="fas fa-arrow-right"></i>  How can I get involved with DeltaHacks?</p>
+				</div>
+				<div class="answer" id="answer5">
+					<p><a href="mailto:deltahacksinstitute@gmail.com">Email us!</a> We're always looking for passionate people who can help with our mission.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div id="contact">
-		<h1>Contact Us</h1>
-		<div id="borderbot" class="slideanim2"></div>
-		<p>Email: <a href="mailto:deltahacksinstitute@gmail.com">deltahacksinstitute@gmail.com</a></p>
-		<div class="row" id="social">
-			<a href="#" class="fab fa-facebook-square"></a>
-		    <a href="#" class="fab fa-snapchat-ghost"></a>
-		    <a href="#" class="fab fa-linkedin-in"></a>
-		    <a href="#" class="fab fa-instagram"></a>
+		<div class="row">
+			<div class="col-sm-6">
+				<h1>Contact Us</h1>
+			</div>
+			<div class="col-sm-6">
+				<p>Email: <a href="mailto:deltahacksinstitute@gmail.com">deltahacksinstitute@gmail.com</a></p>
+				<div class="row" id="social">
+					<a href="https://www.facebook.com/deltahacksinstitute/" target="_blank" class="fab fa-facebook-square"></a>
+				    <a href="https://www.linkedin.com/company/deltahacks-institute/" target="_blank" class="fab fa-linkedin-in"></a>
+				    <a href="#" target="_blank" class="fab fa-instagram"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
 		<p>&#169; 2018 DeltaHacks Institute</p>
 	</div>
-	<script>
-		$(window).scroll(function() {
-			var intro = $("#intro").offset().top;
-
-	  		if($(window).scrollTop() > intro) {
-	  			$("#navbar1").css("background-color", "#232323");
-	  			$("#navcircle").css("background-color", "#232323");
-	  		} else {
-	  			$("#navbar1").css("background-color", "transparent");
-	  			$("#navcircle").css("background-color", "transparent");
-	  		}
-  		});
-	</script>
 
 	<script src="index.js">
     </script>

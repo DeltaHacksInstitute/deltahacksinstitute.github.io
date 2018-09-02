@@ -15,55 +15,36 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
 <body>
-	<nav id="navbar1">
-			<div id="navcircle">
-	    		<a href="index.html" id="deltalogo"><img src="images/logo.jpg"></a>
-	    	</div>
-	  <ul>
-	    <div id="mainnav">
-	  	  <a href="team.html"><li class="navig">team</li></a>
-	      <a class="active" href="about.html"><li class="navig">about</li></a>
-	      <a><li id="placeholder"></li></a>
-	      <a href="events.html"><li class="navig">events</li></a>
-	      <a href="workshops.html"><li class="navig">workshops</li></a>
-	    </div>
-	    <div class="drop">
-	    	<div class="navcircle2">
-	    		<a href="index.html"><img src="images/logo.jpg"></a>
-	    	</div>
-	        <div class="container1" onclick="rotate(this)" id="open">
-	              <div class="bar1"></div>
-	              <div class="bar2"></div>
-	              <div class="bar3"></div>
-	        </div>
-	        <div id="expand">
-	          <a href="team.html"><li class="navigate">team</li></a>
-	          <a href="about.html"><li class="navigate">about</li></a>
-	          <a href="events.html"><li class="navigate">events</li></a>
-	          <a href="workshops.html"><li class="navigate">workshops</li></a>
-	        </div>
-	     </div>
-	  </ul>
+	<nav id="navbar">
+		<a href="index.html" class="deltalogo"><img src="images/logo.jpg"></a>
+		<button id="dots"><img src="images/dots.png"></button>
+		  <ul>
+		    <div id="mainnav">
+		  	  <a href="team.html"><li class="navig">team</li></a>
+		      <a href="about.html"><li class="navig">about</li></a>
+		      <a href="events.html"><li class="navig">events</li></a>
+		      <a href="workshops.html"><li class="navig">workshops</li></a>
+		    </div>
+		  </ul>
 	</nav>
 	<div id="abouthead">
 		<h1>ABOUT DELTA HACKS</h1>
 	</div>
 	<div id="aboutsec1">
-		<div class="row">
-			<h2>What?</h2>
-			<div id="borderbot"></div>
-		</div>
+		<div id="greybackground2"></div>
+		<div id="borderbot" class="slideanim"></div>
 		<div class="row">
 			<div class="col-sm-5">
-				<p>DeltaHacks Institute is made up of a group of hackathon veterans who have abundant experience with creating winning projects. We teach a <a href="workshops.html">variety of topics</a> that help our workshop attendees succeed at hackathons, including:</p>
+				<h2>What?</h2>
+				<p>DeltaHacks Institute is made up of a group of hackathon veterans who have abundant experience with creating winning projects. We create structured curriculum to meet the demands of hackathon attendees.   We teach a <a href="workshops.html">variety of topics</a> that help our workshop attendees succeed at hackathons, including:</p>
 				<ul>
 					<li>Android development</li>
 					<li>iOS development</li>
 					<li>Web development</li>
-          <li>Python</li>
-          <li>Machine learning</li>
-          <li>Coming up with a winning project idea</li>
-          <li>Creating a successful project pitch</li>
+          			<li>Python</li>
+          			<li>Machine learning</li>
+          			<li>Coming up with a winning project idea</li>
+         			<li>Creating a successful project pitch</li>
 					<li>Github usage</li>
 					<li>APIs</li>
 				</ul>
@@ -98,22 +79,20 @@
 		</div>
 	</div>
 	<div id="mission">
-		<h2 class="slideanim">Why?</h2>
 		<div id="borderbot" class="slideanim"></div>
-		<p class="slideanim"><i>The founders of DeltaHacks Institute saw people who were struggling at hackathons and didn't know how to turn their ideas into reality. After being approached by several students and parents, DeltaHacks Institute was founded in March 2018. We create structured curriculum to meet the demands of hackathon attendees. One of the main philosophies of DeltaHacks Institute is to educate students with the tools they need in the shortest amount of time necessary. The best way to do this is through hackathon workshops, which we invite students interested in exploring computer science to attend. Our mission is to teach aspiring coders computer science skills that will help them win hackathons and become successful software developers.</i></p>
+		<h2 class="slideanim">Why?</h2>
+		<p class="slideanim"><i>One of the main philosophies of DeltaHacks Institute is to educate students with the tools they need in the shortest amount of time necessary. The best way to do this is through hackathon workshops, which we invite students interested in exploring computer science to attend. Our mission is to teach aspiring coders computer science skills that will help them win hackathons and become successful software developers.</i></p>
 	</div>
 	<div id="founders">
 		<div class="row" id="foundersinfo">
-			<h1 class="slideanim">Who?</h1>
-			<div id="borderbot" class="slideanim"></div>
-			<p class="slideanim2">DeltaHacks was founded by Tom Zhang and Gautham Raghupathi, who both have won many hackathons and have extensive coding experience. They are joined by a group of hackers, teachers, designers, and leaders who help other students succeed at hackathons and beyond.</p>
+			<h1 class="slideanim2">Who?</h1>
+			<p class="slideanim">DeltaHacks was founded by Tom Zhang and Gautham Raghupathi, who both have won many hackathons and have extensive coding experience.  They saw people who were struggling at hackathons and didn't know how to turn their ideas into reality. After being approached by several students and parents, DeltaHacks Institute was founded in March 2018. They are joined by a group of hackers, teachers, designers, and leaders who help other students succeed at hackathons and beyond.</p>
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
 				<img class="slideanim2" src="images/tom.jpeg" id="tom">
 				<div class="founderbox">
 					<h2 class="slideanim2"><a href="https://www.linkedin.com/in/tom-zhang/" id="linkedin">Tom Zhang</a></h2>
-					<div id="borderbot" class="slideanim2"></div>
 					<div id="tomhid">
 						<ul>
 							<li>Machine Learning Research Intern, UC Berkeley EECS</li>
@@ -127,7 +106,6 @@
 				<img class="slideanim2" src="images/gautham.jpeg" id="gautham">
 				<div class="founderbox">
 					<h2 class="slideanim2"><a href="https://www.linkedin.com/in/gauthamar11/" id="linkedin">Gautham Raghupathi</a></h2>
-					<div id="borderbot" class="slideanim2"></div>
 					<div id="gauthamhid">
 						<ul>
 							<li>Director of Android & Web Development, Monta Vista App and Web Programmingt</li>
