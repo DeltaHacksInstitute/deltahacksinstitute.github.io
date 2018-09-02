@@ -10,16 +10,7 @@ $(document).ready(function() {
     $("#scroll1").click(function(event) {
         event.preventDefault();
         $("html, body").animate({
-                    scrollTop: $("#intro").offset().top
-                }, 800);
-    });
-});
-
-$(document).ready(function() {
-    $("#scroll2").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({
-                    scrollTop: $("#upcoming").offset().top - 40
+                    scrollTop: $("#intro").offset().top + 20
                 }, 800);
     });
 });
