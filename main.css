@@ -8,6 +8,7 @@ body, h1, body, div, a, ol, ul, li, h2, p, em, img, button {
 	margin: 0;
 	outline: 0;
 	font-family: 'Questrial', sans-serif;
+	word-wrap: break-word;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
 	text-align: center;
 	padding: 42px 0px;
 	transition-duration: 0.2s;
-	opacity: 0.9;
+	opacity: 0.98;
 }
 
 #dots {
@@ -171,8 +172,8 @@ h1 {
 #greybackground {
 	position: absolute;
 	background-color: #ddd;
-	height: 80%;
-	top: 20%;
+	height: 100%;
+	bottom: 0;
 	width: 20%;
 }
 
@@ -314,8 +315,12 @@ h1 {
 	width: 30%;
 }
 
+#eventB .eventtitle {
+	font-size: 25px;
+}
+
 .eventbody {
-	padding: 30px 8% 50px 8%;
+	padding: 10px 8% 50px 8%;
 }
 
 .eventdate {
@@ -349,6 +354,7 @@ h1 {
 	color: #444;
 	font-size: 22px;
 	border: 2px solid #444;
+	border-radius: 30px;
 	transition-duration: 0.2s;
 }
 
@@ -371,7 +377,6 @@ h1 {
 #faq #borderbot {
 	top: 250px;
 }
-
 
 #faq h1 {
 	color: #232323;
@@ -493,7 +498,7 @@ h1 {
 
 /*events*/
 #eventshead {
-	padding: 160px 10%;
+	padding: 200px 8%;
 	background: url('images/eventhead.jpg');
 	background-size: 100%;
 	position: absolute;
@@ -506,15 +511,10 @@ h1 {
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	background: linear-gradient(135deg, #222, #00b3c6, #30579f);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-	transition-duration: 0.6s;
-	opacity: 0.6;
+	background: #212868;
+	opacity: 0.8;
 	top: 0;
-	height: 320px;
+	height: 370px;
 }
 
 #eventtitle {
@@ -529,6 +529,7 @@ h1 {
 #eventtitle h1 {
 	color: #eee;
 	font-size: 65px;
+	font-family: 'Work Sans';
 }
 
 #eventtitle h3 {
@@ -536,11 +537,81 @@ h1 {
 	color: #eee;
 }
 
+#timeline {
+	width: 5px;
+	height: 120px;
+	position: absolute;
+	left: 8%;
+	border-radius: 10px;
+	top: 80px;
+	z-index: 40;
+	background-color: #444;
+}
+
+#circle {
+	padding: 10px;
+	background-color: #00b3c6;
+	border: 3px solid #444;
+	position: absolute;
+	left: 7.3%;
+	border-radius: 100%;
+	top: 180px;
+	z-index: 50;
+}
+
 #eventbody {
 	padding: 70px 5% 100px 5%;
 	background-color: #eee;
 	position: relative;
-	top: 320px;
+	top: 370px;
+}
+
+.eventevent {
+	width: 87%;
+	margin: 0px 0px 30px 13%;
+	padding: 0px;
+	position: relative;
+	background-color: white;
+}
+
+.eventcircle {
+	padding: 7px;
+	background-color: gold;
+	border: 2px solid #444;
+	position: absolute;
+	left: -11.7%;
+	border-radius: 100%;
+	top: 110px;
+	z-index: 45;
+	transform: scale(0);
+	transition-duration: 0.2s;
+}
+
+.eventevent .imagecol {
+	padding: 0px;
+	position: relative;
+	z-index: 2;
+	height: 100%;
+}
+
+.eventevent .eventbody {
+	padding: 20px 4%;
+	position: relative;
+	z-index: 5;
+	height: 100%;
+}
+
+.eventevent .eventdate {
+	font-size: 22px;
+}
+
+.eventevent .eventtitle {
+	font-size: 26px;
+}
+
+.eventevent img {
+	width: 100%;
+	overflow-x: hidden;
 }
 
 /*About*/
@@ -567,7 +638,7 @@ h1 {
 	position: absolute;
 	background-color: #ddd;
 	height: 110%;
-	top: 5%;
+	top: 60px;
 	left: 0;
 	width: 60%;
 }
@@ -713,31 +784,49 @@ h1 {
 
 /*Team*/
 #teamhead {
-	padding: 150px 10% 0px 6%;
-	background-color: #eee;
-	color: #232323;
-	margin: 0;
+	padding: 400px 10% 50px 6%;
+	background: url('images/team.png');
+	background-size: 100%;
 	background-attachment: fixed;
+	background-position: top;
+	margin: 0;
+	position: relative;
 }
 
-#teamhead h1 {
+#teamheadbox h1 {
 	font-size: 60px;
 	margin: 0;
+	color: white;
+	font-family: 'Work Sans';
 }
 
-#teamhead i {
+#teamheadbox h4 {
+	font-size: 25px;
+	color: white;
+}
+
+#teamheadbox h4 a {
 	color: #00b3c6;
 }
 
-#teamhead h3 {
-	font-size: 35px;
-	margin: 10px 0px 0px 0px;
+#teamheadbox {
+	padding: 50px 5%;
+	background-color: #232323;
+	position: absolute;
+	bottom: -80px;
+	width: 50%;
+	left: 6%;
 }
 
 #teambody {
-	padding: 60px 6%;
+	padding: 130px 6% 60px 6%;
 	margin: 0;
-	background-color: #eee;
+	background-color: white;
+}
+
+#teambody h1 {
+	font-size: 40px;
+	margin: 10px 0px 0px 10px;
 }
 
 .officer {
@@ -784,7 +873,7 @@ h1 {
 	left: 0;
 	right: 0;
 	top: 20%;
-	z-index: 95;
+	z-index: 99;
 	width: 50%;
 	background-color: #30579f;
 	z-index: 6;
@@ -792,9 +881,17 @@ h1 {
 	color: white;
 }
 
+#bio h1 {
+	font-size: 34px;
+	margin: 0px;
+}
+
+#bio h3 {
+	font-size: 27px;
+}
+
 #bio p {
 	font-size: 20px;
-	padding: 20px 0px;
 }
 
 #cover {
@@ -815,7 +912,7 @@ h1 {
 	position: absolute;
 	top: 0px;
 	right: 20px;
-	z-index: 90;
+	z-index: 98;
 }
 
 #cancel:hover {
@@ -825,29 +922,74 @@ h1 {
 
 /* Workshops*/
 #workshopshead {
-	padding: 140px 10% 45px 10%;
-	background: linear-gradient(70deg, #30579f 50%, #333 50%);
-	color: #eee;
+	padding: 160px 10% 200px 10%;
+	background: url('images/workhead.jpg');
+	background-size: 100%;
+	color: white;
 	background-attachment: fixed;
 }
 
 #workshopshead h1 {
 	font-size: 60px;
+	font-family: 'Work Sans';
 }
 
 #workshopshead h3 {
 	font-size: 30px;
 }
 
-#workshopsbody {
-	padding: 60px 10%;
-	background-color: #ddd;
+.workshop {
+	padding: 0px 0px;
+	color: #444;
+	overflow: hidden;
 }
 
-.workshop {
-	padding: 40px 0px;
+.workshoptext {
+	position: fixed;
+	top: 10%;
+	z-index: 97;
+	width: 84%;
+	left: 0%;
+	margin: 0px 8%;
+	padding: 50px 6%;
+	background-color: white;
+	display: none;
+}
+
+#wkshpmask {
+	height: 100vh;
+	width: 100%;
+	background-color: #222;
+	z-index: 5;
+	opacity: 0.8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.xout {
+	font-size: 50px;
+	position: absolute;
+	z-index: 99;
+	top: 10px;
+	right: 30px;
 	color: #444;
-	border-bottom: 2px solid #444;
+	transition-duration: 0.2s;
+}
+
+.xout:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.wkshp {
+	background-color: #111;
+}
+
+.wkshp .col-sm-6 {
+	padding: 0px;
+	margin: 0px;
 }
 
 .workshop h1 {
@@ -858,6 +1000,10 @@ h1 {
 .wsdescription {
 	font-size: 20px;
 	padding-bottom: 10px;
+}
+
+.wk2 {
+	margin-top: -15%;
 }
 
 .workshop li {
@@ -871,9 +1017,31 @@ h1 {
 }
 
 .workshop img {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	display: block;
+	transition-duration: 0.2s;
+}
+
+.workshop img:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+	opacity: 0.98;
+}
+
+#idea {
+	padding: 100px 5% 50px 5%;
+	color: white;
+	text-align: center;
+}
+
+#idea h1 {
+	font-size: 35px;
+	padding: 15px 0px;
+}
+
+#idea h4 {
+	font-size: 22px;
 }
 
 .slideanim {visibility:hidden;}
@@ -972,11 +1140,10 @@ h1 {
 	}
 
 	#intro {
-		padding: 60px 7% 0px 7%;
+		padding: 60px 7% 0px 0px;
 	}
 
 	#intro h1 {
-		color: #eee;
 		font-size: 40px;
 	}
 
@@ -984,11 +1151,13 @@ h1 {
 		padding-bottom: 30px;
 	}
 
+	#greybackground {
+		width: 40%;
+	}
+
 	#intro a, #fullteam {
 		font-size: 20px;
 		padding: 15px 35px;
-		color: #eee;
-		border: 2px solid #eee;
 		transition-duration: 0.2s;
 	}
 
@@ -1001,7 +1170,7 @@ h1 {
 	}
 
 	#computer {
-		width: 80%;
+		width: 90%;
 		margin-left: 10%;
 		padding-top: 60px;
 	}
@@ -1029,11 +1198,6 @@ h1 {
 		font-size: 40px;
 	}
 
-	.event {
-		margin: 20px 0;
-		padding: 20px 6% 50px 6%;
-	}
-
 	.eventdate {
 		font-size: 22px;
 	}
@@ -1042,13 +1206,8 @@ h1 {
 		font-size: 30px;
 	}
 
-	.event #borderbot {
-		background-color: #333;
-		width: 30%;
-	}
-
-	.eventbody img {
-		width: 100%;
+	#eventA, #eventB {
+		width: 42.5%;
 	}
 
 	.eventbody p {
@@ -1060,13 +1219,20 @@ h1 {
 	}
 
 	#faq {
-		padding: 40px 6% 30px 6%;
-		background-color: #eee;
+		padding: 200px 6% 30px 6%;
 		color: #232323;
+	}
+
+	#faq #borderbot {
+		top: 200px;
 	}
 
 	#faq h1 {
 		font-size: 40px;
+	}
+
+	#faqsection {
+		margin-left: 30%;
 	}
 
 	.faqsec {
@@ -1129,9 +1295,18 @@ h1 {
 		top: 280px;
 	}
 
+	#circle {
+		left: 6.8%;
+	}
+
+	.eventcircle {
+		left: -12.1%;
+		top: 170px;
+	}
+
 	/*About*/
 	#abouthead {
-		padding: 160px 10% 60px 10%;
+		padding: 130px 10% 60px 10%;
 		background-size: 140%;
 	}
 
@@ -1147,8 +1322,8 @@ h1 {
 		font-size: 35px;
 	}
 
-	#aboutsec1 #borderbot, #mission #borderbot {
-		width: 10%;
+	#aboutsec1 #borderbot {
+		top: 70px;
 	}
 
 	#aboutsec1 p {
@@ -1166,6 +1341,10 @@ h1 {
 	#mission {
 		padding: 50px 7% 70px 7%;
 		background-attachment: fixed;
+	}
+
+	#mission #borderbot {
+		top: 50px;
 	}
 
 	#mission h2, #founders h1 {
@@ -1202,19 +1381,24 @@ h1 {
 
 	/*Team*/
 	#teamhead {
-		padding: 130px 10% 40px 10%;
+		padding: 300px 10% 40px 10%;
 	}
 
 	#teamhead h1 {
 		font-size: 50px;
 	}
 
-	#teamhead h3 {
-		font-size: 28px;
+	#teamhead h4 {
+		font-size: 22px;
+	}
+
+	#teamheadbox {
+		width: 80%;
+		left: 5%;
 	}
 
 	#teambody {
-		padding: 50px 5%;
+		padding: 100px 5% 50px 5%;
 	}
 
 	#teambody .col-sm-4 {
@@ -1240,7 +1424,12 @@ h1 {
 		width: 70%;
 	}
 
-	#bio h2 {
+	#bio h1 {
+		font-size: 26px;
+		margin: 0px;
+	}
+
+	#bio h3 {
 		font-size: 22px;
 	}
 
@@ -1250,15 +1439,19 @@ h1 {
 
 	/* Workshops*/
 	#workshopshead {
-		padding: 130px 7% 40px 7%;
+		padding: 130px 7% 70px 10%;
 	}
 
 	#workshopshead h1 {
-		font-size: 50px;
+		font-size: 45px;
 	}
 
 	#workshopshead h3 {
-		font-size: 28px;
+		font-size: 25px;
+	}
+
+	.wk2 {
+		margin-top: -5%;
 	}
 
 	#workshopsbody {
@@ -1269,6 +1462,18 @@ h1 {
 		font-size: 30px;
 	}
 
+	#idea {
+		padding: 30px 5%;
+	}
+
+	#idea h1 {
+		font-size: 30px;
+	}
+
+	#idea h4 {
+		font-size: 20px;
+	}
+
 	.wsdescription {
 		font-size: 19px;
 	}
@@ -1277,96 +1482,19 @@ h1 {
 		font-size: 19px;
 		margin-left: 6%; 
 	}
-
-	.workshop #borderbot {
-		margin: 0px 0px 20px 0px;
-		background-color: #444;
-		width: 20%;
-	}
-
 }
 
 @media only screen and (max-width: 768px) {
-	#mainnav {
-		display: none;
+	#navbar {
+		padding: 32px 0px;
 	}
 
-	#navbar1 ul {
-		height: 52px;
-		width: 100%;
-		margin: 0;
-
-		padding: 25px 0px;
+	.deltalogo img {
+		width: 60px;
 	}
 
-	#navcircle {
-		display: none;
-	}
-
-	#expand {
-		display: none;
-		padding: 60px 0px 20px 0px;
-		background-color: #232323;
-		margin-top: -25px;
-	}
-
-	.navigate {
-		color: #eee;
-		padding: 13px 0px;
-		font-size: 17px;
-		transition-duration: 0.2s;
-	}
-
-	.navigate:hover {
-		background-color: #555;
-		color: #00b3c6;
-	}
-
-	.drop {
-		display: block;
-	}
-
-	.navcircle2 {
-		display: block;
-		width: 45px;
-		position: absolute;
-		left: 0;
-		top: 4px;
-		transition-duration: 0.3s;
-	}
-
-	.navcircle2 img {
-		width: 100%;
-	}
-
-	.container1 {
-		position: absolute;
-		top: -3px;
-		right: 5px;
-		padding: 4px;
-	}
-
-	.container1:hover {
-		cursor: pointer;
-	}
-
-	.bar1, .bar2, .bar3 {
-		width: 30px;
-		margin: 10px 0px;
-		height: 3px;
-		background-color: #eee;
-		transition-duration: 0.1s;
-	}
-
-	.change .bar1 {
-		 -webkit-transform: rotate(-45deg) translate(-9px, 9px);
-		 transform: rotate(-45deg) translate(-9px, 9px);
-	}
-	.change .bar2 {opacity: 0;}
-
-	.change .bar3 {
-		-webkit-transform: rotate(45deg) translate(-9px, -9px);
-		transform: rotate(45deg) translate(-9px, -9px);
+	#dots {
+		top: 3px;
 	}
 
 	#indexhead {
@@ -1389,7 +1517,7 @@ h1 {
 	#showmore .fas {
 		font-size: 20px;
 		bottom: -10px;
-		margin-left: -50px;
+		margin-left: -30px;
 		padding: 15px 24px;
 	}
 
@@ -1397,8 +1525,16 @@ h1 {
 		bottom: -15px;
 	}
 
+	#greybackground {
+		width: 55%;
+	}
+
 	#intro {
-		padding: 50px 10% 0px 10%;
+		padding: 50px 10% 0px 0%;
+	}
+
+	#dottedline {
+		display: none;
 	}
 
 	#intro h1 {
@@ -1422,17 +1558,6 @@ h1 {
 		font-size: 17px;
 	}
 
-	#showmore2 .fas {
-		font-size: 20px;
-		bottom: -10px;
-		margin-left: -50px;
-		padding: 15px 24px;
-	}
-
-	#showmore2 .fas:hover {
-		bottom: -15px;
-	}
-
 	#upcoming {
 		padding: 50px 10%;
 	}
@@ -1441,8 +1566,13 @@ h1 {
 		font-size: 30px;
 	}
 
-	.event {
-		padding: 20px 8% 40px 8%;
+	#seeall {
+		float: none;
+		font-size: 22px;
+	}
+
+	#eventA, #eventB {
+		width: 90%;
 	}
 
 	.eventdate {
@@ -1453,16 +1583,21 @@ h1 {
 		font-size: 25px;
 	}
 
-	.event #borderbot {
-		width: 40%;
-	}
-
 	.eventbody p {
 		font-size: 17px;
 	}
 
 	.signup {
-		font-size: 18px;
+		font-size: 20px;
+	}
+
+	#faq {
+		padding: 200px 7% 50px 10%;
+	}
+
+	#faqsection {
+		width: 100%;
+		margin-left: 10%;
 	}
 
 	#faq h1 {
@@ -1471,6 +1606,7 @@ h1 {
 
 	.faqsec {
 		padding: 15px 0px;
+		margin-left: -10%;
 	}
 
 	.question {
@@ -1501,12 +1637,12 @@ h1 {
 
 	/*events*/
 	#eventshead {
-		padding: 120px 10%;
+		padding: 150px 10%;
 		background-size: 200%;
 	}
 
 	#eventmask {
-		height: 240px;
+		height: 300px;
 	}
 
 	#eventtitle {
@@ -1523,7 +1659,19 @@ h1 {
 	}
 
 	#eventbody {
-		top: 240px;
+		top: 300px;
+	}
+
+	#circle {
+		left: 5%;
+	}
+
+	.eventcircle {
+		left: -13%;
+	}
+
+	.eventevent .eventbody {
+		padding: 20px 5% 30px 5%;
 	}
 
 	/*About*/
@@ -1533,7 +1681,7 @@ h1 {
 	}
 
 	#abouthead h1 {
-		font-size: 40px;
+		font-size: 38px;
 	}
 
 	#aboutsec1 {
@@ -1545,7 +1693,12 @@ h1 {
 	}
 
 	#aboutsec1 #borderbot, #mission #borderbot {
-		width: 20%;
+		top: 60px;
+		width: 8px;
+	}
+
+	#mission #borderbot {
+		top: 20px;
 	}
 
 	#aboutsec1 p {
@@ -1558,11 +1711,11 @@ h1 {
 	}
 
 	#aboutcarousel {
-		padding-top: 30px;
+		padding-top: 0px;
 	}
 
 	#mission {
-		padding: 40px 9% 60px 9%;
+		padding: 20px 9% 60px 9%;
 		background-attachment: fixed;
 	}
 
@@ -1600,19 +1753,32 @@ h1 {
 
 	/*Team*/
 	#teamhead {
-		padding: 100px 10% 30px 10%;
+		padding: 200px 10% 30px 10%;
+		background: url('images/teammobile.png');
+		background-size: 100%;
+		background-attachment: fixed;
 	}
 
 	#teamhead h1 {
 		font-size: 40px;
 	}
 
-	#teamhead h3 {
-		font-size: 23px;
+	#teamhead h4 {
+		font-size: 20px;
+	}
+
+	#teamheadbox {
+		padding: 30px 5%;
+		width: 90%;
 	}
 
 	#teambody {
-		padding: 10px 7% 30px 7%;
+		padding: 100px 7% 30px 7%;
+	}
+
+	.officer {
+		margin-left: 5%;
+		width: 90%;
 	}
 
 	.officer .name {
@@ -1625,20 +1791,26 @@ h1 {
 
 	#bio {
 		width: 94%;
-		position: absolute;
+		top: 80px;
 	}
 
-	#bio h2 {
+	#bio h1 {
+		font-size: 23px;
+		margin: 0px;
+	}
+
+	#bio h3 {
 		font-size: 20px;
 	}
 
 	#bio p {
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	/* Workshops*/
 	#workshopshead {
-		padding: 100px 7% 30px 7%;
+		padding: 150px 7% 50px 10%;
+		background-size: 200%;
 	}
 
 	#workshopshead h1 {
@@ -1653,8 +1825,13 @@ h1 {
 		padding: 10px 7% 30px 7%;
 	}
 
+	.wk2 {
+		margin-top: 0;
+	}
+
 	.workshop {
-		padding: 20px 0px 30px 0px;
+		padding: 0;
+		margin: 0;
 	}
 
 	.workshop h1 {
@@ -1662,16 +1839,21 @@ h1 {
 	}
 
 	.wsdescription {
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	.workshop li {
-		font-size: 17px;
+		font-size: 16px;
 		margin-left: 10%; 
 	}
 
-	.workshop img {
-		padding-top: 20px;
+	#android, #ml {
+		position: absolute;
+		z-index: 75;
+	}
+
+	.xout {
+		font-size: 30px;
 	}
 
 }
