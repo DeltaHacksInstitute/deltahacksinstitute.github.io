@@ -1,1 +1,2 @@
-# deltahacksinstitute.github.io
+# DeltaHacks Institute Website
+Created and managed by Samuel Yang.
