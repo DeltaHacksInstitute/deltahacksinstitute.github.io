@@ -1525,6 +1525,7 @@ h1 {
 
 	#greybackground {
 		width: 55%;
+		bottom: 0;
 	}
 
 	#intro {
