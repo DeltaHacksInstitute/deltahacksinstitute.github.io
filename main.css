@@ -385,8 +385,8 @@ h1 {
 }
 
 #faqsection {
-	width: 60%;
-	margin-left: 40%;
+	width: 70%;
+	margin-left: 30%;
 	background-color: #ddd;
 	padding: 220px 5% 40px 5%;
 	margin-top: -200px;
@@ -394,7 +394,7 @@ h1 {
 
 .faqsec {
 	padding: 10px 0px;
-	margin-left: -60%;
+	margin-left: -50%;
 }
 
 .question {
