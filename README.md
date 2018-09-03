@@ -1,2 +1,2 @@
 # DeltaHacks Institute Website
-Managed by Samuel Yang.
+Created and managed by Samuel Yang.
