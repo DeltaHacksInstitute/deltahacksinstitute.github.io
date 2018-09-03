@@ -922,11 +922,9 @@ h1 {
 
 /* Workshops*/
 #workshopshead {
-	padding: 160px 10% 200px 10%;
-	background: url('images/workhead.jpg');
-	background-size: 100%;
+	padding: 160px 10% 0px 10%;
+	background: #111;
 	color: white;
-	background-attachment: fixed;
 }
 
 #workshopshead h1 {
