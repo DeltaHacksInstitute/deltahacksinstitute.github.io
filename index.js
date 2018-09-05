@@ -125,6 +125,8 @@ function cancel() {
   $("#cover").fadeOut();
 }
 
+
+
 function eventA() {
   if($( window ).width() > 1024) {
     $("#eventA").css("width", "50%");
