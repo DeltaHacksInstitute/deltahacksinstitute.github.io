@@ -104,13 +104,25 @@ h1 {
 }
 
 #indexhead {
-	background: url('images/titleimg.jpg');
-	background-size: 100%;
-	padding: 370px 0px;
+	padding: 0px;
 	position: absolute;
 	z-index: 2;
 	width: 100%;
 	top: 0;
+}
+
+#indexhead video {
+	width: 100%;
+	height: 100%;
+}
+
+#videomask {
+	position: absolute;
+	z-index: 4;
+	background-color: #444;
+	opacity: 0.7;
+	width: 100%;
+	height: 100vh;
 }
 
 #titlesec {
