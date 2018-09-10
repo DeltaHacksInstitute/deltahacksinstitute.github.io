@@ -112,8 +112,7 @@ h1 {
 }
 
 #indexhead video {
-	width: 100%;
-	height: 100%;
+	height: 140vh;
 }
 
 #videomask {
@@ -1123,7 +1122,7 @@ h1 {
 	}
 
 	#indexhead {
-		padding: 300px 0px;
+		padding: 0px 0px;
 	}
 
 	#titlesec {
@@ -1163,6 +1162,7 @@ h1 {
 
 	#greybackground {
 		width: 40%;
+		bottom: 0;
 	}
 
 	#intro a, #fullteam {
@@ -1508,7 +1508,6 @@ h1 {
 	}
 
 	#indexhead {
-		padding: 200px 0px;
 		background-size: 180%;
 	}
 
