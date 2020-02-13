@@ -104,7 +104,9 @@ h1 {
 }
 
 #indexhead {
-	padding: 0px;
+	background: url('images/titleimg.jpg');
+	background-size: 100%;
+	padding: 370px 0px;
 	position: absolute;
 	z-index: 2;
 	width: 100%;
@@ -1017,7 +1019,7 @@ h1 {
 
 .workshop li {
 	font-size: 20px;
-	margin-left: 3%; 
+	margin-left: 3%;
 }
 
 .workshop #borderbot {
@@ -1076,7 +1078,7 @@ h1 {
     0% {
       opacity: 0;
       transform: translateX(-10%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateX(0%);
@@ -1086,7 +1088,7 @@ h1 {
     0% {
       opacity: 0;
       -webkit-transform: translateX(-10%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateX(0%);
@@ -1097,7 +1099,7 @@ h1 {
     0% {
       opacity: 0;
       transform: translateY(20%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -1107,7 +1109,7 @@ h1 {
     0% {
       opacity: 0;
       -webkit-transform: translateY(20%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -1490,7 +1492,7 @@ h1 {
 
 	.workshop li {
 		font-size: 19px;
-		margin-left: 6%; 
+		margin-left: 6%;
 	}
 }
 
@@ -1854,7 +1856,7 @@ h1 {
 
 	.workshop li {
 		font-size: 16px;
-		margin-left: 10%; 
+		margin-left: 10%;
 	}
 
 	#android, #ml {
@@ -1867,7 +1869,3 @@ h1 {
 	}
 
 }
-
-
-
-
