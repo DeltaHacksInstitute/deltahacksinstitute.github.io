@@ -7,81 +7,98 @@
 <link href="https://fonts.googleapis.com/css?family=Questrial|Work+Sans:700" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
+
 <body>
-	<nav id="navbar">
-		<a href="index.html" class="deltalogo"><img src="images/logo.jpg"></a>
-		<button id="dots"><img src="images/dots.png"></button>
-		  <ul>
-		    <div id="mainnav">
-		  	  <a href="team.html"><li class="navig">team</li></a>
-		      <a href="about.html"><li class="navig">about</li></a>
-		      <a href="events.html"><li class="navig">events</li></a>
-		      <a href="workshops.html"><li class="navig">workshops</li></a>
-		    </div>
-		  </ul>
-	</nav>
-	<div id="teamhead">
-		<div id="teamheadbox">
-			<h1>OUR TEAM</h1>
-	   		<h4 style="padding-left:1em">  Want to join? Email us at <a href="mailto:deltahacksinstitute@gmail.com">deltahacksinstitute@gmail.com</a>.</h4>
-	   	</div>
-	</div>
-	<div id="teambody">
-		<h1>Officers</h1>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="officer" id="tom2" onclick="bio(tom)">
-					<img src="images/tom.jpg">
-					<h2 class="name">Tom Zhang</h2>
-					<h3 class="position">Founder, Co-President</h3>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="officer" id="gautham2" onclick="bio(gautham)">
-					<img src="images/gautham.jpg">
-					<h2 class="name">Gautham Raghupathi</h2>
-					<h3 class="position">Founder, Co-President</h3>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="officer" id="sam2" onclick="bio(sam)">
-					<img src="images/sam.jpg">
-					<h2 class="name">Sam Yang</h2>
-					<h3 class="position">Vice President, Webmaster</h3>
-				</div>
-			</div>
-		</div>
+  <nav id="navbar">
+    <a href="index.html" class="deltalogo"><img src="images/logo.jpg"></a>
+    <button id="dots"><img src="images/dots.png"></button>
+    <ul>
+      <div id="mainnav">
+        <a href="team.html">
+          <li class="navig">team</li>
+        </a>
+        <a href="about.html">
+          <li class="navig">about</li>
+        </a>
+        <a href="events.html">
+          <li class="navig">events</li>
+        </a>
+        <a href="workshops.html">
+          <li class="navig">workshops</li>
+        </a>
+      </div>
+    </ul>
+  </nav>
+  <div id="teamhead">
+    <div id="teamheadbox">
+      <h1>OUR TEAM</h1>
+      <h4 style="padding-left:1em"> Want to join? Email us at <a href="mailto:deltahacksinstitute@gmail.com">deltahacksinstitute@gmail.com</a>.</h4>
+    </div>
+  </div>
+  <div id="teambody">
+    <h1>Officers</h1>
     <div class="row">
       <div class="col-sm-4">
+        <div class="officer" id="tom2" onclick="bio(tom)">
+          <img src="images/tom.jpg">
+          <h2 class="name">Tom Zhang</h2>
+          <h3 class="position">Founder, Co-President</h3>
+        </div>
       </div>
       <div class="col-sm-4">
-				<div class="officer" id="carter2" onclick="bio(carter)">
-					<img src="images/carter.jpg">
-					<h2 class="name">Carter Bian</h2>
-					<h3 class="position">Director of Operations</h3>
-				</div>
-			</div>
+        <div class="officer" id="gautham2" onclick="bio(gautham)">
+          <img src="images/gautham.jpg">
+          <h2 class="name">Gautham Raghupathi</h2>
+          <h3 class="position">Founder, Co-President</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="officer" id="sam2" onclick="bio(sam)">
+          <img src="images/sam.jpg">
+          <h2 class="name">Sam Yang</h2>
+          <h3 class="position">Vice President, Webmaster</h3>
+        </div>
+      </div>
     </div>
-		<div id="cover"></div>
-		<div id="bio">
-			<div id="cancel" onclick="cancel()">x</div>
-			<div id="text">
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<p>&#169; 2018 DeltaHacks Institute</p>
-	</div>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4">
+        <div class="officer" id="carter2" onclick="bio(carter)">
+          <img src="images/carter.jpg">
+          <h2 class="name">Carter Bian</h2>
+          <h3 class="position">Director of Operations</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="officer" id="sarthak2" onclick="bio(sarthak)">
+          <img src="images/sarthak.jpg">
+          <h2 class="name">Sarthak Kamat</h2>
+          <h3 class="position">Director of Workshops</h3>
+        </div>
+      </div>
+    </div>
+    <div id="cover"></div>
+    <div id="bio">
+      <div id="cancel" onclick="cancel()">x</div>
+      <div id="text">
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>&#169; 2018-2020 DeltaHacks Institute</p>
+  </div>
 
 
-	<script src="index.js">
-    </script>
+  <script src="index.js">
+  </script>
 </body>
+
 </html>
